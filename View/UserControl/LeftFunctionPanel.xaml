@@ -6,12 +6,49 @@
              xmlns:local="clr-namespace:Financial_Accounting.View.UserControl"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="250">
+
+    <!-- Ресурсы для UserControl -->
+    <UserControl.Resources>
+        <!-- Стиль для кнопки -->
+        <Style TargetType="Button" x:Key="leftPanel">
+            <Setter Property="Background" Value="OrangeRed" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Padding" Value="10,5" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <!-- Переопределяем ControlTemplate -->
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" 
+                                Background="{TemplateBinding Background}" 
+                                BorderBrush="DarkOliveGreen" 
+                                BorderThickness="1" 
+                                CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                              VerticalAlignment="Center" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <!-- Триггер для наведения курсора -->
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="OrangeRed"/>
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <!-- Основной контейнер -->
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="25*"/>
         </Grid.ColumnDefinitions>
 
+        <!-- Прямоугольник для фона -->
         <Rectangle Grid.Column="0" Fill="DarkOliveGreen" Height="auto"/>
+
+        <!-- Контейнер для кнопок -->
         <StackPanel Margin="10,0,0,0">
             <Grid Grid.Column="0" Margin="0,0,0,0">
                 <Grid.RowDefinitions>
@@ -24,27 +61,28 @@
                     <RowDefinition Height="50"/>
                 </Grid.RowDefinitions>
 
+                <!-- Кнопки -->
                 <Button Grid.Row="0" Content="Доходы" HorizontalAlignment="Left" VerticalAlignment="Center"
-     FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
-    BorderThickness="0"/>
+                        FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
+                        BorderThickness="0" Style="{StaticResource leftPanel}"/>
                 <Button Grid.Row="1" Content="Расходы" HorizontalAlignment="Left" VerticalAlignment="Center"
-     FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
-    BorderThickness="0"/>
+                        FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
+                        BorderThickness="0" Style="{StaticResource leftPanel}"/>
                 <Button Grid.Row="2" Content="Остаток" HorizontalAlignment="Left" VerticalAlignment="Center"
-     FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
-    BorderThickness="0"/>
-                <Button Grid.Row="4" Content="Журнал операций" HorizontalAlignment="Left" VerticalAlignment="Center"
-     FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
-     BorderThickness="0"/>
+                        FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
+                        BorderThickness="0" Style="{StaticResource leftPanel}"/>
                 <Button Grid.Row="3" Content="Анализ операций" HorizontalAlignment="Left" VerticalAlignment="Center"
-     FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
-    BorderThickness="0"/>
+                        FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
+                        BorderThickness="0" Style="{StaticResource leftPanel}"/>
+                <Button Grid.Row="4" Content="Журнал операций" HorizontalAlignment="Left" VerticalAlignment="Center"
+                        FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
+                        BorderThickness="0" Style="{StaticResource leftPanel}"/>
                 <Button Grid.Row="5" Content="Аккаунты" HorizontalAlignment="Left" VerticalAlignment="Center"
-     FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
-    BorderThickness="0"/>
+                        FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
+                        BorderThickness="0" Style="{StaticResource leftPanel}"/>
                 <Button Grid.Row="6" Content="О разработчиках" HorizontalAlignment="Left" VerticalAlignment="Center"
-     FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
-    BorderThickness="0"/>
+                        FontSize="20" FontFamily="Palatino Linotype" Foreground="White" Background="Transparent"
+                        BorderThickness="0" Style="{StaticResource leftPanel}"/>
             </Grid>
         </StackPanel>
     </Grid>

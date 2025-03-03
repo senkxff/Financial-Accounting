@@ -1,0 +1,32 @@
+﻿<Window x:Class="Financial_Accounting.View.Forms.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Financial_Accounting.View.Forms"
+        xmlns:uc="clr-namespace:Financial_Accounting.View.UserControl"
+        WindowStyle="None" 
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Height="550" Width="400">
+    
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="0" ResizeBorderThickness="1" CornerRadius="20"/>
+    </WindowChrome.WindowChrome>
+    <Grid>
+        <TextBlock Text="Регистрация" FontSize="40" HorizontalAlignment="Center" FontFamily="Arial Black" 
+                   FontWeight="Normal" VerticalAlignment="Top" Margin="0,10,0,0"/>
+
+        <StackPanel VerticalAlignment="Center">
+            <uc:InputDataTextBox Placeholder="Придумайте свой логин" Margin="0,5,0,0"/>
+            <uc:InputDataTextBox Placeholder="Придумайте свой пароль" Margin="0,5,0,0"/>
+            <uc:InputDataTextBox Placeholder="Подтвердите пароль" Margin="0,5,0,0"/>
+            <Button Width="200" Height="30" Margin="0,5,0,0" Foreground="White"
+                    Content="Зарегистрироваться" FontSize="16" BorderBrush="DarkOliveGreen" 
+                    Background="DarkOliveGreen"/>
+        </StackPanel>
+
+        <uc:ExitButton Height="25" HorizontalAlignment="Right" Width="25"
+                       VerticalAlignment="Top" Margin="0,24,7,0"/>
+    </Grid>
+</Window>

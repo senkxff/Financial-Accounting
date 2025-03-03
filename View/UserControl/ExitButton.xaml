@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              Height="100" Width="100">
     <Grid>
-        <Image  Source="../Images/ExitButton.png" Stretch="Fill" />
+        <Image  Source="../Resourses/ExitButton.png" Stretch="Fill" />
 
     </Grid>
 </UserControl>

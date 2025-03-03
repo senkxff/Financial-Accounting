@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="View\Images\ExitButton.png" />
+    <None Remove="View\Resourses\ExitButton.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="View\Images\ExitButton.png" />
+    <Resource Include="View\Resourses\ExitButton.png" />
   </ItemGroup>
 
 </Project>
