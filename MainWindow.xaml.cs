@@ -14,8 +14,15 @@ public partial class MainWindow : Window
         DragMove();
     }
 
+
+
     private void ExitButton_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
     {
         this.Close();
+    }
+
+    private void passwordBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+    {
+        
     }
 }
