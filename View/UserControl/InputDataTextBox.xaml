@@ -7,10 +7,12 @@
              mc:Ignorable="d" 
              Width="200" Height="30">
     <Grid Background="White">
-        <TextBlock Text="Ввести данные" FontSize="16" 
+        <TextBlock Name="placeHolder" Text="{Binding Placeholder}" FontSize="16" 
            HorizontalAlignment="Left" VerticalAlignment="Center"
            Foreground="Gray" Margin="5,0,0,0"/>
-        <TextBox Background="Transparent"/>
+        
+        <TextBox Name="txtInput" Background="Transparent" TextChanged="txtInput_TextChanged" FontSize="16"
+                 VerticalContentAlignment="Center"/>
         
     </Grid>
 </UserControl>

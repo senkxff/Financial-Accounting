@@ -13,4 +13,9 @@ public partial class MainWindow : Window
     {
         DragMove();
     }
+
+    private void ExitButton_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+    {
+        this.Close();
+    }
 }
