@@ -5,11 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Financial_Accounting.View.Forms"
         xmlns:uc="clr-namespace:Financial_Accounting.View.UserControl"
-        WindowStyle="None"
+        WindowStyle="None" 
         mc:Ignorable="d"
         Title="RegistrationWindow" Height="550" Width="400">
+    
+
     <WindowChrome.WindowChrome>
-        <WindowChrome GlassFrameThickness="0" ResizeBorderThickness="0" CornerRadius="10"/>
+        <WindowChrome GlassFrameThickness="0" ResizeBorderThickness="1" CornerRadius="20"/>
     </WindowChrome.WindowChrome>
     <Grid>
         <TextBlock Text="Регистрация" FontSize="40" HorizontalAlignment="Center" FontFamily="Arial Black" 

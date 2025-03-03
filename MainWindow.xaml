@@ -24,13 +24,13 @@
 
         <StackPanel Grid.Column="1" VerticalAlignment="Center">
             <uc:InputDataTextBox Grid.Column="1" VerticalAlignment="Center" Margin="0,0,0,5" Placeholder="Введите логин"/>
-            <uc:InputDataTextBox x:Name="passwordBox" Grid.Column="1" VerticalAlignment="Center" Margin="0,0,0,5" Placeholder="Введите пароль"
-                                 />
+            <uc:InputDataTextBox x:Name="passwordBox" Grid.Column="1" VerticalAlignment="Center" 
+                                 Margin="0,0,0,5" Placeholder="Введите пароль"/>
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="200">
                 <Button Grid.Column="1" VerticalAlignment="Center" Margin="0,0,30,5" Width="120" 
                     Height="28" Content="Зарегистрироваться" Background="Transparent" 
-                    BorderBrush="DarkOliveGreen" Foreground="Black"/>
+                    BorderBrush="DarkOliveGreen" Foreground="Black" />
                 <Button Grid.Column="1" VerticalAlignment="Center" Margin="0,0,0,5" Width="50" 
                     Height="28" Content="Войти" Background="Transparent" 
                     BorderBrush="DarkOliveGreen" Foreground="Black"/>
